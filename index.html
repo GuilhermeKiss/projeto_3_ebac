@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kiss Burger</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="lib/bootstrap.min.css">
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <header class="navbar navbar-expand-lg sticky-top p-4" id="cabecalho">
+        <div class="container">
+            <h1 class="navbar-brand m-0 section-title fw-bold fs-0"><a href="#" class="nav-link fs-2 fw-bold">KISS BURGER</a></h1>
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu-navegacao">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <nav class="navbar-collapse collapse justify-content-end" id="menu-navegacao">
+                <ul class="nav nav-pills d-block d-md-flex">
+                    <li class="nav-item section-title fs-5">
+                        <a href="#sobre-o-restaurante" class="nav-link">
+                            <i class="bi bi-house-door me-1"></i> <!-- me = significa "margin end" o mesmo que margin-right -->
+                            Sobre o restaurante</a>
+                    </li>    
+                    <li class="nav-item section-title fs-5">
+                        <a href="#novidades" class="nav-link">
+                            <i class="bi bi-fire"></i>
+                            Promoções</a>
+                    </li>
+                    <li class="nav-item section-title fs-5">
+                        <a href="#cardapio" class="nav-link">
+                            <i class="bi bi-card-text me-1"></i>
+                            Nosso cardápio</a>
+                    </li>
+                    <li class="nav-item section-title fs-5">
+                        <a href="#fale-conosco" class="nav-link">
+                            <i class="bi bi-chat-left-text me-1"></i>
+                            Fale conosco</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div data-bs-spy="scroll" data-bs-target="cabecalho" data-bs-smooth-scroll="true">
+        <section>
+            <div class="carousel slide" data-bs-ride="carousel" id="carousel-slides">
+                <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="2000">
+                        <img src="images/slides/Slide 1.jpg" alt="Foto do espaço interno do restaurante">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="2000">
+                        <img src="images/slides/Slide 2.jpg" alt="Foto de duas taças de vinho">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="2000">
+                        <img src="images/slides/Slide 3.jpg" alt="Foto de uma mesa com comida">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carousel-slides" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carousel-slides" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carousel-slides" class="active" data-bs-slide-to="0"></button>
+                    <button type="button" data-bs-target="#carousel-slides" data-bs-slide-to="1"></button>
+                    <button type="button" data-bs-target="#carousel-slides" data-bs-slide-to="2"></button>
+                </div>
+            </div>
+            <div class="pt-5 pb-5" id="sobre-o-restaurante">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-7 mt-2 mt-md-0">
+                            <h2 class="section-title fs-2">Sobre <span class="text-colored">o restaurante</span></h2>
+                            <p>
+                                Oferecer uma experiência gastronômica única, onde a paixão pela comida se funde com a arte de criar hambúrgueres excepcionais.<br>
+                                Trabalhamos para ser reconhecidos como a melhor hamburgeria da região, conquistando corações através do paladar e da criatividade.
+                            </p>
+                            <h3 class="section-title fs-2">Sobre <span class="text-colored">o espaço</span></h3>
+                            <p>Aqui na <b>KISS BURGER</b> contamos com uma excelente estrutura para receber os mais variados tipos de público. Venha nos visitar!
+                            </p>
+                            <ul>
+                                <li>Espaço dedicado para entretenimento, como tela para jogos esportivos ou música ao vivo em determinados dias.</li>
+                                <li>Mesas espaçosas e confortáveis para acomodar grupos de diferentes tamanhos.</li>
+                            </ul>
+                        </div>
+                        <div class="col-md-5">
+                            <div class="carousel slide" data-bs-ride="carousel" id="carousel-espaco">
+                                <div class="carousel-inner carousel-fade">
+                                    <div class="carousel-item active" data-bs-interval="2000">
+                                        <img class="w-100 d-block rounded" src="images/hamburgeria 1.jpg" alt="Espaço interno da hamburgeria">
+                                    </div>
+                                    <div class="carousel-item" data-bs-interval="2000">
+                                        <img class="w-100 d-block rounded" src="images/hamburgeria 2.jpg" alt="Entrada da hamburgeria">
+                                    </div>
+                                </div>
+                                <button class="carousel-control-prev" type="button" data-bs-target="#carousel-espaco" data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon"></span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#carousel-espaco" data-bs-slide="next">
+                                    <span class="carousel-control-next-icon"></span>
+                                </button>
+                                <div class="carousel-indicators">
+                                    <button type="button" data-bs-target="#carousel-espaco" class="active" data-bs-slide-to="0"></button>
+                                    <button type="button" data-bs-target="#carousel-espaco" data-bs-slide-to="1"></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="novidades" class="pt-5 pb-5">
+            <div class="container">
+                <div class="row">
+                    <h2 class="section-title text-center fs-2">Aproveite nossas<span class="text-colored"> promoções</span></h2>
+                </div>
+                <div class="row mt-4">
+                    <div class="col-md-6 text-center">
+                        <h3 class="section-title text-colored fs-4">
+                            <i class="bi bi-star-fill"></i>
+                            Promoção Irresistível: X-Bacon Completo por Apenas R$25,99
+                        </h3>
+                        <img src="images/novidades/Novidade 1.jpg" alt="Foto de velas acesas" class="d-center w-50 rounded mb-2">
+                        <p>Chegou a hora de satisfazer sua vontade de bacon com o nosso <b>incrível X-Bacon!</b> Preparamos uma oferta que vai fazer você salivar!</p>
+                        <p class="fw-bold">
+                            O que você vai saborear:
+                        </p>
+                        <ul class="text-start">
+                            <li>Um suculento hambúrguer de carne grelhada no ponto ideal.</li>
+                            <li>Generosas fatias de bacon crocante e saboroso.</li>
+                            <li>Queijo derretido para uma explosão de sabores deliciosos.</li>
+                            <li>Frescos vegetais, incluindo alface, tomate e cebola.</li>
+                            <li>O toque especial do nosso molho exclusivo.</li>
+                            <li>Tudo isso no nosso pão fresco e macio, assado diariamente.</li>
+                            <li>Acompanha uma deliciosa porção de fritas tamanho média.</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6 text-center">
+                        <h3 class="section-title text-colored fs-4">
+                            <i class="bi bi-star-fill"></i>
+                            Combo Delicioso: X-Chicken + Coca-Cola por Apenas R$ 19,99
+                        </h3>
+                        <img src="images/novidades/Novidade 2.jpg" alt="Foto de mesa decorada" class="d-center w-50 rounded mb-2">
+                        <p>Apresentamos o nosso <b>incrível combo X-Chicken</b> junto com uma refrescante Coca-Cola! Uma combinação perfeita para os amantes de frango!</p>
+                        <p class="fw-bold">
+                            O que você vai saborear:
+                        </p>
+                        <ul class="text-start">
+                            <li>O suculento X-Chicken, recheado com um filé de frango crocante e temperado.</li>
+                            <li>Queijo derretido para um sabor irresistível.</li>
+                            <li>Vegetais frescos, incluindo alface e tomate, que complementam o sabor do frango.</li>
+                            <li>O toque especial do nosso molho exclusivo, que realça todos os sabores.</li>
+                            <li>Uma Coca-Cola gelada para acompanhar e refrescar.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="cardapio" class="pt-5 pb-5">
+            <div class="container">
+                <div class="row">
+                    <h2 class="section-title text-center mb-5">
+                        Nosso <span class="text-colored">cardápio</span></h2>
+                </div>
+                <div class="row">
+                    <aside class="col-md-2">
+                        <nav class="nav nav-pills flex-column nav-cardapio">
+                            <button type="button" data-bs-toggle="tab" data-bs-target="#hamburgers" class="section-title text-start nav-link text-colored fs-5 active">Burgers</button>
+                            <button type="button" data-bs-toggle="tab" data-bs-target="#bebidas-sem-alcool" class="section-title text-start nav-link text-colored fs-5">Bebidas sem álcool</button>
+                            <button type="button" data-bs-toggle="tab" data-bs-target="#bebidas-alcoolicas" class="section-title text-start nav-link text-colored fs-5">Bebidas alcoólicas</button>
+                            <button type="button" data-bs-toggle="tab" data-bs-target="#porcoes" class="section-title text-start nav-link text-colored fs-5">Porções</button>
+                            <button type="button" data-bs-toggle="tab" data-bs-target="#sobremesas" class="section-title text-start nav-link text-colored fs-5">Sobremesas</button>
+                        </nav>
+                    </aside>
+                    <div class="col-md-10">
+                        <div class="tab-content">
+                            <div class="tab-pane" id="bebidas-sem-alcool">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100 rounded" src="images/cardapio/bebidas nao alcoolicas/coca-cola.jpg" alt="Foto de latas de Coca-Cola">
+                                        <h5 class="text-colored section-title mt-2">Refrigerantes</h5>
+                                        <p class="fs-10">
+                                            Contamos com as melhores marcas de refrigerantes para satisfazer qualquer tipo de gosto.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100 rounded" src="images/cardapio/bebidas nao alcoolicas/suco.jpg" alt="Foto de copo de suco">
+                                        <h5 class="text-colored section-title mt-2">Sucos</h5>
+                                        <p class="fs-10">
+                                            Temos uma seleção diversificada de sabores, desde os clássicos até os mais ousados. A escolha é sua, e a garantia de qualidade é nossa!
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100 rounded" src="images/cardapio/bebidas nao alcoolicas/energético.jpg" alt="Foto de copo de lata de energético">
+                                        <h5 class="text-colored section-title mt-2">Energéticos</h5>
+                                        <p class="fs-10">
+                                            Contamos com as melhores marcas de energéticos para satisfazer qualquer tipo de gosto.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100 rounded" src="images/cardapio/bebidas nao alcoolicas/chá.jpg" alt="Foto de copo de chá">
+                                        <h5 class="text-colored section-title mt-2">Chás</h5>
+                                        <p class="fs-10">
+                                            Nossa variedade de blends foi criada para proporcionar harmonia ao seu dia. De chás revitalizantes a opções calmantes, temos a receita perfeita para cada momento.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="bebidas-alcoolicas">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100 rounded" src="images/cardapio/bebidas alcoolicas/chopp.jpg" alt="Foto de copo de chopp">
+                                        <h5 class="text-colored section-title mt-2">Chopp</h5>
+                                        <p class="fs-10">
+                                            Brinde à alegria, ao sabor e à amizade com nosso chopp gelado! Visite-nos hoje mesmo e brinde à vida com uma experiência única!
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100 rounded" src="images/cardapio/bebidas alcoolicas/cervejas.jpg" alt="Foto de copos de cerveja">
+                                        <h5 class="text-colored section-title mt-2">Cervejas Artesanais</h5>
+                                        <p class="fs-10">
+                                            Nossas cervejas são cuidadosamente criadas por mestres cervejeiros que dedicam sua paixão e expertise a cada receita. O resultado? Cervejas únicas que contam histórias de sabor.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100 rounded" src="images/cardapio/bebidas alcoolicas/coqueteis.jpg" alt="Foto de copos de coquetéis">
+                                        <h5 class="text-colored section-title mt-2">Coquetéis</h5>
+                                        <p class="fs-10">
+                                            Dos clássicos aos contemporâneos, temos uma variedade de coquetéis feitos sob medida para satisfazer sua busca por novas experiências. Cada coquetel conta uma história de sabor.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100 rounded" src="images/cardapio/bebidas alcoolicas/destilados.jpg" alt="Foto de garrafas de destilados">
+                                        <h5 class="text-colored section-title mt-2">Destilados</h5>
+                                        <p class="fs-10">
+                                            Venha explorar o mundo dos nossos destilados exclusivos! Cada garrafa conta uma história de tradição, paixão e sabor sofisticado.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="porcoes">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100 rounded" src="images/cardapio/porcoes/fritas.jpg" alt="Foto de porção de batata frita">
+                                        <h5 class="text-colored section-title mt-2">Fritas</h5>
+                                        <p class="fs-10">
+                                            Nossas fritas são preparadas com maestria para oferecer uma experiência que vai além do comum. Elas são a definição de conforto em forma de comida!
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100 rounded" src="images/cardapio/porcoes/fritas-com-cheddar.jpg" alt="Foto de porção de batata frita com cheddar e bacon">
+                                        <h5 class="text-colored section-title mt-2">Fritas com cheddar e bacon</h5>
+                                        <p class="fs-10">
+                                            Cada garfada é uma jornada ao paraíso dos sabores, com o queijo cheddar cremoso e o bacon crocante criando uma sinfonia de prazer em seu paladar!
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100 rounded" src="images/cardapio/porcoes/cebola.jpg" alt="Foto de porção de cebola empanada">
+                                        <h5 class="text-colored section-title mt-2">Cebola empanada</h5>
+                                        <p class="fs-10">
+                                            Nossas cebolas empanadas são preparadas com maestria para oferecer a combinação perfeita de suavidade interna e crocância externa. Um prazer para todos os sentidos!
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100 rounded" src="images/cardapio/porcoes/polenta.jpg" alt="Foto de porção de polenta">
+                                        <h5 class="text-colored section-title mt-2">Polenta</h5>
+                                        <p class="fs-10">
+                                            Nossa porção de polenta crocante é uma experiência que cativa o paladar de todos. O equilíbrio entre a crocância e o sabor é simplesmente irresistível!
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane active" id="hamburgers">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100 rounded" src="images/cardapio/burgers/xbacon.png" alt="Foto de de um X-Bacon">
+                                        <h5 class="text-colored section-title mt-2">X-Bacon</h5>
+                                        <p class="fs-10">
+                                            Nossa deliciosa criação combina a crocância do bacon perfeitamente frito com o derretimento suculento do queijo. Cada mordida é uma explosão de sabores que vai te deixar com água na boca!
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100 rounded" src="images/cardapio/burgers/xsalada.png" alt="Foto de um X-Salada">
+                                        <h5 class="text-colored section-title mt-2">X-Salada</h5>
+                                        <p>
+                                            Nossa incrível criação combina a frescura dos vegetais crocantes com uma seleção de sabores que vão agradar a todos os paladares. Cada mordida é uma jornada de frescor e sabor!
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100 rounded" src="images/cardapio/burgers/xtriplo.png" alt="Foto de um Triplo Cheddar">
+                                        <h5 class="text-colored section-title mt-2">Triplo Cheddar</h5>
+                                        <p class="fs-10">
+                                            Nosso lanche exclusivo é a combinação perfeita entre um hambúrguer suculento e três camadas de queijo cheddar derretido. Cada mordida é uma celebração do sabor intenso e inigualável do queijo!
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100 rounded" src="images/cardapio/burgers/duplo-cheddar.png" alt="Foto de um Duplo Cheddar">
+                                        <h5 class="text-colored section-title mt-2">Duplo Cheddar</h5>
+                                        <p class="fs-10">
+                                            Se você é um verdadeiro amante de queijo, este é o seu paraíso! O Duplo Cheddar é uma sinfonia de sabores, com duas camadas de queijo cheddar derretido que vão te levar ao êxtase gastronômico!
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100 rounded" src="images/cardapio/burgers/xpicanha.png" alt="Foto de um X-Picanha">
+                                        <h5 class="text-colored section-title mt-2">X-Picanha</h5>
+                                        <p class="fs-10">
+                                            Nosso X-Picanha é a união perfeita entre a suculência da picanha grelhada e uma explosão de sabores incríveis. Cada mordida é uma viagem ao mundo das sensações gustativas!
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100 rounded" src="images/cardapio/burgers/xegg.png" alt="Foto de um X-Egg">
+                                        <h5 class="text-colored section-title mt-2">X-Egg</h5>
+                                        <p class="fs-10">
+                                            Preparamos cada X-Egg com carinho para oferecer a você uma experiência que vai além das suas expectativas. A junção da carne e do ovo é uma sinfonia de sabores que vai te fazer voltar por mais!
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100 rounded" src="images/cardapio/burgers/x-chicken.png" alt="Foto de um X-Chicken">
+                                        <h5 class="text-colored section-title mt-2">X-Chicken</h5>
+                                        <p class="fs-10">
+                                            Venha experimentar o sabor surpreendente do X-Chicken! Cada mordida é um convite a uma aventura de sabores que você não vai esquecer.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100 rounded" src="images/cardapio/burgers/xtudo.png" alt="Foto de um X-Tudo">
+                                        <h5 class="text-colored section-title mt-2">X-Tudo</h5>
+                                        <p class="fs-10">
+                                            Não economizamos em sabor! O X-Tudo é uma obra-prima de criatividade culinária, garantindo que cada pedaço traga uma experiência que supera qualquer expectativa.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="sobremesas">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100 rounded" src="images/cardapio/sobremesas/sorvete.png" alt="Foto de sorvete de chocolate e creme">
+                                        <h5 class="text-colored mt-2 section-title">Sorvete de creme e chocolate</h5>
+                                        <p class="fs-10">
+                                            Venha experimentar a maravilha do nosso sorvete de creme e chocolate! Cada colherada é um momento de puro prazer gelado.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100 rounded" src="images/cardapio/sobremesas/petit-gateau.png" alt="Foto de sorvete de petit gâteau">
+                                        <h5 class="text-colored section-title mt-2">Petit Gâteau</h5>
+                                        <p class="fs-10">
+                                            Nosso petit gateau é uma obra-prima culinária, cuidadosamente preparada para capturar a essência do chocolate em sua forma mais indulgente.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100 rounded" src="images/cardapio/sobremesas/brownie-chocolate.png" alt="Foto de brownie de chocolate">
+                                        <h5 class="text-colored section-title mt-2">Brownie de Chocolate</h5>
+                                        <p class="fs-10">
+                                            Venha experimentar a magia do nosso brownie de chocolate! Cada pedaço é uma jornada de sabor que vai aquecer seu coração.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100 rounded" src="images/cardapio/sobremesas/bolo-floresta-negra.png" alt="Foto de bolo de floresta negra">
+                                        <h5 class="text-colored section-title mt-2">Bolo de Floresta Negra</h5>
+                                        <p class="fs-10">
+                                            Cada garfada é um passeio por uma floresta de sabores. O bolo de chocolate, o recheio de cerejas frescas e o chantilly se juntam em uma dança de prazer na sua boca.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="fale-conosco" class="pt-5 pb-5">
+            <div class="container">
+                <div class="row">
+                    <h2 class="section-title text-center">Fale <span class="text-colored">conosco</span></h2>
+                    <p class="text-center fs-8">Aqui no nosso estabelecimento, valorizamos a sua opinião e estamos sempre buscando melhorar a sua experiência. Se você tiver sugestões, reclamações ou dúvidas, por favor, sinta-se à vontade para nos informar. Queremos garantir que sua voz seja ouvida e que possamos proporcionar o melhor atendimento possível.</p>
+                </div>
+                <div class="row">
+                    <div class="col-md-7 mb-5">
+                        <form id="form">
+                            <div class="mb-3">
+                                <label for="nome" class="form-label fw-bold text-colored">Seu nome:</label>
+                                <input type="text" id="nome" class="form-control" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="form-label fw-bold text-colored">Seu e-mail:</label>
+                                <input type="email" id="email" class="form-control" placeholder="exemplo@exemplo.com" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="telefone" class="form-label fw-bold text-colored">Seu telefone (opcional):</label>
+                                <input type="tel" id="telefone" class="form-control" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="mensagem" class="form-label fw-bold text-colored">Sua mensagem</label>
+                                <textarea class="form-control" id="mensagem" placeholder="" required></textarea>
+                            </div>
+                            <button id="enviar" type="reset" class="btn fw-bold">Enviar</button>
+                        </form>
+                    </div>
+                    <div class="col-md-5">
+                        <div class="row">
+                            <h3 class="section-title fs-4 text-colored">
+                                <i class="bi bi-hand-thumbs-up-fill"></i>
+                                Redes sociais
+                            </h3>
+                            <ul class="social-links">
+                                <li class="fs-5">
+                                    <a href="#">
+                                        <i class="bi bi-facebook text-colored"></i>
+                                    </a>
+                                </li>
+                                <li class="fs-5 ms-1 me-1">
+                                    <a href="#">
+                                        <i class="bi bi-instagram text-colored"></i>
+                                    </a>
+                                </li>
+                                <li class="fs-5">
+                                    <a href="#">
+                                        <i class="bi bi-whatsapp text-colored"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="row mt-4">
+                            <h3 class="section-title fs-4 text-colored">
+                                <i class="bi bi-cursor-fill"></i>
+                                Endereço
+                            </h3>
+                            <p>
+                                Rua Aureliano Coutinho, 109, Vila Buarque, São Paulo - SP
+                            </p>
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1087.4568664804622!2d-46.653544266196405!3d-23.541337098499177!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce57bc513b0395%3A0xf8caecd88e8edbad!2sEBAC!5e0!3m2!1sen!2sbr!4v1692719368615!5m2!1sen!2sbr" width="400" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+        <footer>
+        <p class="text-center p-3">2023 © Desenvolvido por <a class="link-dark" href="https://www.linkedin.com/in/guilherme-kiss/" target="_blank">Guilherme Kiss</a> - Todos os direitos reservados.</p>
+    </footer>
+
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="lib/cdn.jsdelivr.net_npm_bootstrap@5.3.1_dist_js_bootstrap.bundle.min.js"></script>
+    <script src="lib/jquery.mask.min.js"></script>
+    <script>
+    $(document).ready(function() {
+        $('#telefone').mask('(00) 00000-0000', {
+            placeholder: '(DDD)XXXXX-XXXX'
+        })
+        $("#nome").on("input", function(){
+            var regexp = /[^a-zA-Záàâãéèêíïóôõöúçñ ]/g;
+            if(this.value.match(regexp)){
+                $(this).val(this.value.replace(regexp,''));
+            }
+        });
+        $("#enviar").click(function(){
+            var nome = $('#nome').val();
+            alert(nome + " sua mensagem foi enviada com sucesso!");
+        });
+    })
+    </script>
+</body>
+</html>
